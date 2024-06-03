@@ -3,10 +3,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from "../assets/fitnesslogo.png";
+import styles from "../styles/NavBar.module.css";
 
 function NavBar () {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="md" className={styles.NavBar} fixed="top">
       <Container>
         <Navbar.Brand href="#home">
             <img src={logo} alt="logo" height="45" />
